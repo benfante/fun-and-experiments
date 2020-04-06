@@ -15,11 +15,17 @@ You can run the tests of this project typing:
 Build it with:
 
 ```bash
-./mvnw package
+./mvnw clean verify
 ```
 
 Run it with:
 
 ```bash
-./mvnw TBD....
+./mvnw exec:java -Dexec.mainClass="com.benfante.fun.adbst.FST"
+```
+
+You can skip tests using the `-DskipTests` option, i.e:
+
+```bash
+./mvnw -DskipTests clean verify
 ```
